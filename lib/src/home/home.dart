@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:timeclock/src/home/clock.dart';
 
 class Home extends StatefulWidget {
+
   Home({Key key, this.title}) : super(key: key);
   final String title;
 
@@ -33,25 +34,12 @@ class _HomeState extends State<Home> {
           child: Column(
             children: <Widget>[
               Clock(),
-              Padding(
-                padding: const EdgeInsets.only(top: 35.0),
-                child: Image.asset(
-                  'assets/img/check-in.png',
-                  width: 200,
-                  scale: 1,
-                ),
-              ),
               Container(
                   height: 60,
                   width: double.infinity,
                   color: Colors.red,
-                  child: 
-                    ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: <Widget>[
-                        Text("12:56"),
-                      ],
-                    ),
+                  child: null
+                    
                 ),       
               
             ],
