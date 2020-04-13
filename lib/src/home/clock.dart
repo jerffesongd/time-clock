@@ -11,6 +11,7 @@ class Clock extends StatefulWidget {
 }
 
 class _ClockState extends State<Clock> {
+  Timer _timer;
   DateTime dateTime;
   DateFormat _dateFormat = DateFormat("EEEE, dd LLLL yyyy");
   DateFormat _timeFormat = DateFormat("HH:mm:ss");
@@ -19,6 +20,7 @@ class _ClockState extends State<Clock> {
   void initState() {
     super.initState();  
     dateTime = DateTime.now();
+    _timer = Timer.periodic(const Duration(seconds: 1), updateTime);
   }
 
   String dataFormatada() {

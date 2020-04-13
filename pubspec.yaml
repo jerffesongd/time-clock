@@ -20,6 +20,10 @@ dependencies:
   flutter:
     sdk: flutter
   clock: ^1.0.1
+  path_provider: ^1.6.5
+  permission_handler: ^5.0.0+hotfix.3
+  dio: ^3.0.9
+  downloads_path_provider: ^0.1.0
   
   flutter_localizations:
     sdk: flutter
